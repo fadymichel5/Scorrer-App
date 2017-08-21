@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:src="@drawable/b11" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teamb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="@string/teamA"
+                android:textColor="#616161"
+                android:textSize="14sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/textView"
+                        android:text="@string/in"
+                        />
+                    <TextView
+                        style="@style/textView"
+                        android:text="@string/out"
+                         />
+                    <TextView
+                        style="@style/textView"
+                        android:text="@string/foul"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/in_A"
+                        style="@style/score"
+                        android:text="@string/score"
+                         />
+                    <TextView
+                        android:id="@+id/out_A"
+                        style="@style/score"
+                        android:text="@string/score" />
+                    <TextView
+                        android:id="@+id/foul_A"
+                        style="@style/score"
+                        android:text="@string/score" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/add_in_team_a"
+                style="@style/button"
+                android:onClick="addInTeamA"
+                android:text="@string/addIn" />
+            <Button
+                android:id="@+id/add_out_team_a"
+                style="@style/button"
+                android:onClick="addOutTeamA"
+                android:text="@string/addOut" />
+            <Button
+                android:id="@+id/add_foul_team_a"
+                style="@style/button"
+                android:onClick="addFoulTeamA"
+                android:text="@string/addFoul" />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="290dp"
+            android:layout_marginTop="9dp"
+            android:background="@android:color/darker_gray"></View>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/teama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="@string/teamB"
+                android:textColor="#616161"
+                android:textSize="14sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/textView"
+                        android:gravity="center"
+                        android:text="@string/in"/>
+                    <TextView
+                        style="@style/textView"
+                        android:text="@string/out" />
+                    <TextView
+                        style="@style/textView"
+                        android:text="@string/foul" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/in_B"
+                        style="@style/score"
+                        android:text="@string/score" />
+                    <TextView
+                        android:id="@+id/out_B"
+                        style="@style/score"
+                        android:text="@string/score" />
+                    <TextView
+                        android:id="@+id/foul_B"
+                        style="@style/score"
+                        android:text="@string/score" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/add_in_team_b"
+                style="@style/button"
+                android:onClick="addInTeamB"
+                android:text="@string/addIn" />
+            <Button
+                android:id="@+id/add_out_team_b"
+                style="@style/button"
+                android:onClick="addOutTeamB"
+                android:text="@string/addOut" />
+            <Button
+                android:id="@+id/add_foul_team_b"
+                style="@style/button"
+                android:onClick="addFoulTeamB"
+                android:text="@string/addFoul" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        android:onClick="reset"
+        android:text="Reset" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PracticeSet2</string>
+    <string name="score">0</string>
+    <string name="in">In</string>
+    <string name="out">Out</string>
+    <string name="foul">Foul</string>
+    <string name="addIn">+1 In</string>
+    <string name="addOut">+1 Out</string>
+    <string name="addFoul">+1 Foul</string>
+    <string name="teamA">Team A</string>
+    <string name="teamB">Team B</string>
+</resources>
